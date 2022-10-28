@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ney_flutter/screens/home.screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,22 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Ney',
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomePage()
+        '/': (context) => const HomeScreen()
       },
     );
   }
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Center(),
-    );
-  }
-}
